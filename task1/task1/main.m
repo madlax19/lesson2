@@ -91,12 +91,14 @@ int main(int argc, char * argv[]) {
     NSString *str6 = [planetsArray componentsJoinedByString: @", "];
     NSLog(@"%@", str6);
     
-    
+    //1
     int zero = 0;
     int result = 10 / zero;
     NSLog(@"%i",result);
-    
+    //2
     @throw NSInternalInconsistencyException;
+    //3
+    @[][0];
     
 
     
