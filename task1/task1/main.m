@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 int main(int argc, char * argv[]) {
     char aVar = 'a';
@@ -81,10 +82,23 @@ int main(int argc, char * argv[]) {
     for (l=1; l < 11; l++){
         NSLog(@"iterator = %i", l);
     }
-     
+ 
+    NSString *str = [[NSString alloc] initWithFormat:@"%f", 22.5f];
+    NSString *str1 = [[NSString alloc] initWithString:hello];
+    NSString *str3 = @"This is str3 :)";
+    NSString *str4 = [NSString new];
+    NSString *str5 = [[NSString alloc] init];
+    NSString *str6 = [planetsArray componentsJoinedByString: @", "];
+    NSLog(@"%@", str6);
+    
+    
+    int zero = 0;
+    int result = 10 / zero;
+    NSLog(@"%i",result);
+    
+    @throw NSInternalInconsistencyException;
+    
 
-	
-	
-	// Task 3
+    
 	return 0;
 }
