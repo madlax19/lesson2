@@ -55,29 +55,34 @@ int main(int argc, char * argv[]) {
     NSLog(@"Значение переменной planetsArray: %@", planetsArray);
     NSLog(@"Значение переменной satellitesDictionary: %@", satellitesDictionary);
     
+   
+    //1
+    NSInteger i = 1;
     
- 
+    do {
+        NSLog(@"iterator = %i", i);
+        i++;
+        }
+    while (i < 11);
     
+    //2
     
+    NSInteger k = 1;
     
+   while (k < 11) {
+       NSLog(@"iterator = %i", k);
+       k++;
+   }
     
+    //3
     
+    NSInteger l = 1;
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-	
-	
-	// Task 2
+    for (l=1; l < 11; l++){
+        NSLog(@"iterator = %i", l);
+    }
+     
+
 	
 	
 	// Task 3
