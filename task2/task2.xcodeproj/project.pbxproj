@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		6D7AF2CC1BCD633E0074B523 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7AF2CB1BCD633E0074B523 /* main.m */; };
+		F313B55C1BCED35E000EF525 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = F313B55B1BCED35E000EF525 /* Card.m */; };
+		F313B55F1BCED37F000EF525 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = F313B55E1BCED37F000EF525 /* PlayingCard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6D7AF2C71BCD633E0074B523 /* task2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = task2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D7AF2CB1BCD633E0074B523 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6D7AF2DB1BCD633E0074B523 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F313B55A1BCED35E000EF525 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		F313B55B1BCED35E000EF525 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		F313B55D1BCED37F000EF525 /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
+		F313B55E1BCED37F000EF525 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,10 @@
 			isa = PBXGroup;
 			children = (
 				6D7AF2DB1BCD633E0074B523 /* Info.plist */,
+				F313B55A1BCED35E000EF525 /* Card.h */,
+				F313B55B1BCED35E000EF525 /* Card.m */,
+				F313B55D1BCED37F000EF525 /* PlayingCard.h */,
+				F313B55E1BCED37F000EF525 /* PlayingCard.m */,
 				6D7AF2CA1BCD633E0074B523 /* Supporting Files */,
 			);
 			path = task2;
@@ -127,7 +137,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F313B55F1BCED37F000EF525 /* PlayingCard.m in Sources */,
 				6D7AF2CC1BCD633E0074B523 /* main.m in Sources */,
+				F313B55C1BCED35E000EF525 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +231,10 @@
 		6D7AF2DF1BCD633E0074B523 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = task2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.geekhub.ios.lesson2.task2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -229,7 +244,10 @@
 		6D7AF2E01BCD633E0074B523 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = task2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.geekhub.ios.lesson2.task2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -255,6 +273,7 @@
 				6D7AF2E01BCD633E0074B523 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
