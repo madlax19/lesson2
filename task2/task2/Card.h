@@ -10,8 +10,8 @@
 
 @interface Card : NSObject
 
-@property NSString *name;
-@property NSInteger value;
+@property(nonatomic) NSString *name;
+@property(nonatomic) NSInteger value;
 
 
 

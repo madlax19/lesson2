@@ -10,6 +10,8 @@
 
 @implementation PlayingCard
 
+@synthesize value = _value;
+
 - (id)initWithName:(NSString *) name value:(NSInteger)value
 {
     if( self = [super init] )
@@ -24,7 +26,7 @@
 
 -(NSInteger)value
 {
-    return self.value + self.name.length;
+    return _value + self.name.length;
 }
 
 
